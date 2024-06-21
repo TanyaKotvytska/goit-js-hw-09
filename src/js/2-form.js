@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const messageInput = form.querySelector('textarea[name="message"]');
 
   function updateFormData() {
-    formData.email = emailInput.value;
-    formData.message = messageInput.value;
+    formData.email = emailInput.value.trim();
+    formData.message = messageInput.value.trim();
     localStorage.setItem('feedback-form-state', JSON.stringify(formData));
   }
 
