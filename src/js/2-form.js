@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     event.preventDefault();
 
     if (!formData.email || !formData.message) {
-      alert('Будь ласка, заповніть всі поля');
+      alert('Fill please all fields');
       return;
     }
 
